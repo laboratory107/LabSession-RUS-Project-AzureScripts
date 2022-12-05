@@ -1,3 +1,5 @@
+@echo off
+
 set location="westeurope"
 ::Iskoristite isti resource group kao za IoT Hub 
 set resourceGroup="<nazivResourceGroupa>" 
