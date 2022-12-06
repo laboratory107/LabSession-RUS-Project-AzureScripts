@@ -5,7 +5,7 @@ set iotHubName="<iotHubNaziv>"
 ::Iskoristite isti resource group kao za IoT Hub 
 set resourceGroup="<nazivGrupe>" 
 ::Nije kritican, ali dajte neki smisleni naziv za ovu rutu
-set routeName="TelemetrijaRuta"
+set routeName="telemetry"
 ::Dopustene vrijednosti su: deviceconnectionstateevents, devicejoblifecycleevents, devicelifecycleevents, devicemessages, digitaltwinchangeevents, invalid, twinchangeevents
 set source="devicemessages"
 

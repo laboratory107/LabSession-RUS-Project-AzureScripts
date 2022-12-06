@@ -13,7 +13,7 @@ set storageName="<storageAccountNaziv>"
 :: call az group create --name %resourceGroup% --location %location%
 
 ::Ako nemate storage account od prije
-::call az storage account create --name %storageName% --location %location% --resource-group %resourceGroup%
+call az storage account create --name %storageName% --location %location% --resource-group %resourceGroup%
 
 echo "Stvaram novi function app sa nazivom %appName%, sa Windows OS-om i .Net 6.0 runtime stackom i storage accountom %storageName%"
 call az functionapp create --consumption-plan-location %location% --storage-account %storageName% --name %appName% --disable-app-insights --os-type Windows --resource-group %resourceGroup% --runtime dotnet --runtime-version 6 --functions-version 4
