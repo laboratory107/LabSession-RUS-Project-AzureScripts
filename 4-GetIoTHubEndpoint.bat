@@ -6,6 +6,7 @@ set resourceGroup="<nazivResourceGroupa>"
 set iotHubName="<iotHubNaziv>"
 set appName="<nazivAppa>"
 
+call az extension add --name azure-iot
 call az config set extension.use_dynamic_install=yes_without_prompt
 
 FOR /F "tokens=2" %%F IN ('call az iot hub connection-string show -n %iotHubName% --default-eventhub') DO SET connStr=%%F
