@@ -1,13 +1,13 @@
-
+@echo off
 
 set location="westeurope"
 ::Iskoristite isti resource group kao za IoT Hub 
-set resourceGroup="foi-rus" 
+set resourceGroup="<nazivGrupe>" 
 ::Dio je javnog URL-a preko kojega se pristupa bazi, stoga neka bude unique, npr. rus22lposaric
 ::Dopusteni znakovi: lowercase letters 'a'-'z', the numbers 0-9 and the hyphen (crtica ne smije biti na početku ili kraju!)
-set server="btomas22"
-set database="btomas22temp"
-set login="btomas22temp"
+set server="<nazivServera>"
+set database="<nazivBaze>"
+set login="<LDAP_username>"
 ::Pravila za passworde
 :: 1) ne smije sadržavati login name/username
 :: 2) mora zadovoljavati tri od sljedećih četiri pravila:
@@ -15,7 +15,7 @@ set login="btomas22temp"
 ::    b) veliki znak
 ::    c) broj
 ::    d) simbol
-set password="Lozinka123!"
+set password="<lozinka>"
 :: Po defaultu je uključen firewall, stoga je potrebno napraviti iznimku za Azure servise 
 set startIp=0.0.0.0
 set endIp=0.0.0.0
